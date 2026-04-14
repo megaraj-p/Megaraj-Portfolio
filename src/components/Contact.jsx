@@ -3,9 +3,9 @@ import { FiGithub, FiLinkedin, FiMail, FiSend, FiLoader } from 'react-icons/fi'
 import emailjs from '@emailjs/browser'
 import { personalInfo } from '../data/portfolio'
 
-const EMAILJS_SERVICE_ID  = import.meta.env.VITE_EMAILJS_SERVICE_ID
-const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
-const EMAILJS_PUBLIC_KEY  = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+const EMAILJS_SERVICE_ID = 'service_xc4f4g9'
+const EMAILJS_TEMPLATE_ID = 'template_xfi2vo7'
+const EMAILJS_PUBLIC_KEY = 'OM4G_I77EVwGlG7cF'
 
 const CONTACT_LINKS = [
   { icon: <FiGithub size={20}/>,   label: 'GitHub',   sub: 'github.com/megaraj-p',       href: personalInfo.github,               color: '#FBBF24' },
