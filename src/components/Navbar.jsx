@@ -46,7 +46,19 @@ export default function Navbar() {
         </button>
       </div>
 
+      <div
+        className={`md:hidden fixed inset-0 bg-black/40 transition-opacity duration-300 ${open ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
+        onClick={() => setOpen(false)}
+      />
+
       <div className={`md:hidden fixed top-0 right-0 w-72 h-screen bg-[#07080F]/98 backdrop-blur-xl border-l border-white/[0.07] flex flex-col pt-20 px-6 gap-1 transition-transform duration-300 ${open ? 'translate-x-0' : 'translate-x-full'}`}>
+        <button
+          onClick={() => setOpen(false)}
+          aria-label="Close menu"
+          className="absolute top-6 right-6 text-slate-300 hover:text-amber-400 bg-transparent border-none cursor-pointer"
+        >
+          <FiX size={24} />
+        </button>
         {links.map(l => (
           <button key={l} onClick={() => scrollTo(l)}
             className="text-left text-slate-300 hover:text-amber-400 font-heading text-lg font-medium px-4 py-3 rounded-xl hover:bg-amber-400/8 transition-all duration-200 cursor-pointer bg-transparent border-none w-full">
