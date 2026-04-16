@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from 'react'
 import { FiGithub, FiLinkedin, FiArrowDown, FiDownload } from 'react-icons/fi'
 import { personalInfo } from '../data/portfolio'
-import resume from '../../public/Megaraj P.pdf'
+
+const resumeUrl = '/resume.pdf?v=20260416'
 
 const roles = personalInfo.roles
 
@@ -62,7 +63,7 @@ export default function Hero() {
           <a href={personalInfo.github} target="_blank" rel="noopener noreferrer" className="btn-primary">
             <FiGithub size={18} /> View GitHub
           </a>
-          <a href={resume} target="_blank" rel="noopener noreferrer" className="btn-primary">
+          <a href={resumeUrl} target="_blank" rel="noopener noreferrer" className="btn-primary">
             <FiDownload size={18} /> Download CV
           </a>
           <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer" className="btn-outline">
