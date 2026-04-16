@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { FiGithub, FiLinkedin, FiArrowDown, FiDownload } from 'react-icons/fi'
 import { personalInfo } from '../data/portfolio'
 
-const resumeUrl = '/resume.pdf?v=20260416'
+const resumeUrl = `${import.meta.env.BASE_URL}resume.pdf?v=20260416`
 
 const roles = personalInfo.roles
 
